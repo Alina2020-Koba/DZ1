@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        a{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient( 90deg, #4287f5, #605cc0, #faa9f4,	#ec64f4,#b074c0,#e6c3c5,#440087);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+
+
+}
+
+a:hover{
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate
+{
+    0%{
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+
+    }
+}
+
+a::before
+{
+    content:'';
+    /* position: absolute; */
+    top:-5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient( 90deg, #4287f5, #605cc0, #faa9f4,#ec64f4,#b074c0,#e6c3c5,#440087);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+a:hover:before
+{
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <p class="maintitle"><a href="index1.html#ch1"># Адреса Интернета</a></p>
+        <p class="chapters"><a href="index1.html#ch1" target="_blank" alt="Введение">1. Введение</a></p>
+        <p class="chapters"><a href="index1.html#ch2" target="_blank" alt="Универсальные идентификаторы">2. Универсальные идентификаторы</a></p>
+        <p class="chapters"><a href="index1.html#ch3" target="_blank" alt="Три основных класса IP-адресов">3. Три основных класса IP-адресов</a></p>
+        <p class="chapters"><a href="index1.html#ch4" target="_blank" alt="Адреса описывают сетевые соединени">4. Адреса описывают сетевые соединения</a></p>
+        <p class="chapters"><a href="index1.html#ch5" target="_blank" alt="Сетевые и широковещательные адреса">5. Сетевые и широковещательные адреса</a></p>
+        <p class="chapters"><a href="index1.html#ch6" target="_blank" alt="Ограниченное широковещание">6. Ограниченное широковещание</a></p>
+    </main>
+</body>
+</html>
